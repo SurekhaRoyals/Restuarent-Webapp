@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block class %}class="sub_page"{% endblock class %}
+
+{% block active %}active{% endblock active %}
+
+{% block main %}
+{% comment %} start feedback form {% endcomment %}
+<!-- book section -->
+  <section class="book_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Your Views
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form_container">
+            <form action="">
+              <div>
+                <input type="text" class="form-control" placeholder="Your Name" />
+              </div>
+              <div>
+                <textarea class="form-control" id = "exampleFormControlTextarea1k" name = "review" rowa = 3 required placeholder="Review"></textarea>
+              </div>
+              
+              <div>
+                <select class="form-control nice-select wide">
+                  <option value="" disabled selected>
+                    Rate your experience
+                  </option>
+                  <option value="">
+                    1
+                  </option>
+                  <option value="">
+                    2
+                  </option>
+                  <option value="">
+                    3
+                  </option>
+                  <option value="">
+                    4
+                  </option>
+                  <option value="">
+                    5
+                  </option>
+                </select>
+              </div>
+              {% comment %} <div>
+                <input type="date" class="form-control">
+              </div> {% endcomment %}
+              <div class="btn_box">
+                <button>
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- end book section -->
+{% comment %} end feedback form  {% endcomment %}
+{% endblock %}
